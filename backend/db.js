@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 
 
-const url = 'mongodb+srv://raj:raj@cluster0.6d6kuqv.mongodb.net/?retryWrites=true&w=majority'
+const url = 'mongodb+srv://suraj:suraj@cluster0.iorvdzq.mongodb.net/?retryWrites=true&w=majority'
 
 const Connection = () => {
       mongoose.connect(url).then(() => {

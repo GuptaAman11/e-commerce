@@ -16,7 +16,12 @@ app.use(cors())
 
 Connection()
 
+app.get('/', (req, res) => {
+    res.send('hello world')
+})
+
+
 
 app.use('/api/v1/users', userRoutes);
-app.use('/api/v1/Products', productRoutes);
+app.use('/api/v1/products', productRoutes);
 

@@ -1,6 +1,8 @@
  
 const Product = require('../models/product');
 
+
+
 // saare product ko dikhane ke liye all products
 
 const getAllProducts = async (req, res) => {

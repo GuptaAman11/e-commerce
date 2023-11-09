@@ -7,7 +7,7 @@ const url = 'mongodb+srv://raj:raj@cluster0.6d6kuqv.mongodb.net/?retryWrites=tru
 
 const Connection = () => {
       mongoose.connect(url).then(() => {
-        console.log("concttioned!!!") })
+        console.log("concectioned!!!") })
     
 }
 

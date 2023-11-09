@@ -11,7 +11,7 @@ module.exports.verifyJWT = async (req, res, next) => {
     const decoded = jwt.verify(token, "secret_key");
 
     req.user = decoded;
-
+   
     next();
   } catch (error) {
     res.status(401).json({ msg: "cxcx" });

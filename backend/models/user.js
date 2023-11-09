@@ -9,16 +9,16 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true
     },
   
     password: {
         type: String,
         required: true,
-    },
-     password123: {
-        type: String,
-        required: true,
+    } ,
+  
+    typeOfUser : {
+        type : String ,
+        enum : ["Buyer" , "Seller" , "Admin"]
     }
 })
 
@@ -26,3 +26,4 @@ const User = mongoose.model("User", userSchema);
 
 
 module.exports = User;
+

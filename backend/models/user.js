@@ -14,10 +14,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-    },
-     password123: {
-        type: String,
-        required: true,
+    } ,
+  
+    typeOfUser : {
+        type : String ,
+        enum : ["Buyer" , "Seller" , "Admin"]
     }
 })
 

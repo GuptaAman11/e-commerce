@@ -82,7 +82,7 @@ const getProductByproductId = async (req, res) => {
   }
 };
 
-
+//update product by product id
 const updateProduct = async (req, res) => {
   try {
     const user = req.user.user._id
@@ -112,6 +112,23 @@ const updateProduct = async (req, res) => {
   }
 };
 
+//get product by userId
+const getProductByUserId = async(req,res)=>{
+try {
+const {userId} = req.params
+const product = await Product.findById(userId)
+if(!product){
+  res.status(401).json({msg:"Product not found"})
+}else{
+  res.status(200).json({msg:"Product found",product})
+}
+} catch (error) {
+  console.error("Error product not found:", error.message);
+  res.status(500).json({ msg: "Internal Server Error" });
+}
+
+}
+
 
 
  
@@ -125,6 +142,8 @@ module.exports = {
 
   getProductByproductId ,
 
-  updateProduct
+  updateProduct,
+
+  getProductByUserId
 
 };

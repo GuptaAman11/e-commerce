@@ -1,6 +1,6 @@
 const Router = require('express')
 const router = Router();
-const {addProduct,getAllProducts,deleteProduct ,getProductByproductId , updateProduct} = require('../controllers/product');
+const {addProduct,getAllProducts,deleteProduct ,getProductByproductId , updateProduct,getProductByUserId} = require('../controllers/product');
 const { verifyJWT, seller } = require('../middlewares/auth');
 
 
@@ -11,6 +11,7 @@ router.put('/updateProduct/:productId', verifyJWT ,seller, updateProduct)
 
 router.get('/getAllProducts',verifyJWT, getAllProducts)
 router.get('/getProductByproductId/:productId',verifyJWT, getProductByproductId)
+router.get('/getProductByUserId/:userId',verifyJWT,getProductByUserId)
 
 router.delete('/deleteProduct/:productId' ,deleteProduct)
 

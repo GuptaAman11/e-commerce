@@ -22,7 +22,11 @@ total : {
 },
 quntitiy : {
     type : Number
-}
+},
+typeOfUserId : {
+    type : mongoose.Types.ObjectId,
+    ref : "User"
+},
 
 
 })

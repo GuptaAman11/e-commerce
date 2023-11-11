@@ -1,22 +1,34 @@
 const Order = require('../models/order')
 
-const buyProduct = async(req,res)=>{
-const {prodId} = req.params
-// const user = req.user.user._id
-const { userId,address,total,quntity} = req.body
-const buy =  new Order({
-    productId : prodId,
-    userId : userId,
-    address : address,
-    total : total,
-    quntitiy : quntity
-});
-try {
-    await Order.save(buy)
-    res.json({msg:"Your order is placed",Order});//
-} catch (error) {
-    res.status(401).json({msg:"Oreder not placed"});
-}
+
+const orderProduct =async(req,res) =>{
+    try {
+        const user = req.user.user._id
+        const {productId ,qty , name , price ,totalPrice , itemsPrice , shippingPrice , taxPrice} = req.body
+
+        const newOrder = await Order.create({
+
+            orderItems :[{
+                productId : productId,
+                qty : qty,
+                name : name,
+                price:price,
+
+            }],
+            userId : user ,
+            totalPrice : totalPrice ,
+            shippingPrice : shippingPrice ,
+            itemsPrice : itemsPrice ,
+            taxPrice : taxPrice ,
+
+        })
+        await newOrder.save()
+        res.json(newOrder)
+    } catch (error) {
+        console.log(error)
+    }
 }
 
-module.exports = {buyProduct}
+module.exports = {
+    orderProduct
+}

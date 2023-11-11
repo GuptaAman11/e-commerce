@@ -3,6 +3,7 @@ const app = express()
 const { Connection } = require('./db')
 const userRoutes = require('./routes/user')
 const productRoutes = require('./routes/product')
+const orderRoutes = require('./routes/order')
 const cartRoutes = require('./routes/cart')
 const cors = require('cors')
 
@@ -25,6 +26,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/users', userRoutes);
 app.use('/api/v1/products', productRoutes);
+app.use('/api/v1/order',orderRoutes);
+
 app.use('/api/v1/carts', cartRoutes);
 
 

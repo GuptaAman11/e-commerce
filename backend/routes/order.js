@@ -1,9 +1,9 @@
 const Router = require('express')
 const router = Router()
-const {buyProduct} = require('../controllers/order')
+const {orderProduct} = require('../controllers/order')
 const { verifyJWT} = require('../middlewares/auth');
 
 
-router.post("/buyProduct/:prodId",verifyJWT,buyProduct) //test  http://localhost:8000/api/v1/order/buyProduct/
+router.post("/createOrder",verifyJWT,orderProduct) 
 
 module.exports = router

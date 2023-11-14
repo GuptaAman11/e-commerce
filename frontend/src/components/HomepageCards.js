@@ -20,8 +20,8 @@ const HomepageCards = () => {
                             
                         </div>
                             <div className='grid grid-flow-col gap-5 pb-2 px-6'>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Buy Now</span>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Add To Cart</span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Buy Now</a></span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Add to Cart</a></span>
                             </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@ const HomepageCards = () => {
                             
                         </div>
                             <div className='grid grid-flow-col gap-5 pb-2 px-6'>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Buy Now</span>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Add To Cart</span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Buy Now</a></span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Add to Cart</a></span>
                             </div>
                 </div>
             </div>
@@ -62,8 +62,8 @@ const HomepageCards = () => {
                             
                         </div>
                             <div className='grid grid-flow-col gap-5 pb-2 px-6'>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Buy Now</span>
-                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'>Add To Cart</span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Buy Now</a></span>
+                                <span className='rounded-full bg-gray-300 px-3 py-1 font-base mb-2 text-center font-serif'><a href='#'>Add to Cart</a></span>
                             </div>
                 </div>
             </div>

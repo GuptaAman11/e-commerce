@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 import HomepageCards from './components/HomepageCards';
 import Navbar from './components/Navbar';
 

@@ -15,19 +15,16 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    confirmpassword: {
-        type: String,
-        required: false,
-    },
+    
 
     address:{
         type:String,
-        required:false,
+        required:true,
     },
 
     phoneNumber:{
         type:Number,
-        required:false,
+        required: true,
     } ,
   
     typeOfUser : {

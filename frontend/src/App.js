@@ -1,41 +1,26 @@
-// import logo from './logo.svg';
-// import './App.css';
-
+import HomepageCards from "./components/Home/HomePageCards";
+import Navbar from "./components/Home/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Login from "./components/Login/Login";
+import SignUp from "./components/Login/Signup";
+import ProductAddingForm from "./components/ProductAddingForm/ProductAddingForm";
 function App() {
   return (
-    <div id="flex-container">
+    <div>
+      <Navbar />
 
-      
-      <div id="flex-item">
-        <div id="product-head">
-          <img src="/image"></img>
-          <h2>TITLE</h2>
-        </div>
-        <div id="product-info">
-          <h2>
-            <span id="dolar-span">$</span>549
-          </h2>
-        </div>
-      </div>
-
-
-      {/* product2 */}
-
-      <div id="flex-item">
-        <div id="product-head">
-          <img src="/image"></img>
-          <h2>TITLE 2</h2>
-        </div>
-
-        <div id="product-info">
-          <h2>
-            <span id="dolar-span">$</span>899
-          </h2>    
-        </div>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/landingPage" element={<LandingPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/" element={<HomepageCards />} />
+          <Route path="/" element={<ProductAddingForm />} />
+        </Routes>
+      </Router>
     </div>
   );
-  
 }
 
 export default App;

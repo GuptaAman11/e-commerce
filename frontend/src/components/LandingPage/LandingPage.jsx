@@ -4,15 +4,7 @@ import  {Link}  from "react-router-dom";
 const LandingPage = () => {
     return (
         <>
-            <div className="bg-purple-300 flex flex-col lg:flex-row justify-between px-8 h-20 w-screen items-center">
-                <Link to="/homePage" className=" text-2xl font-serif">Welcome To Ecommerce</Link>
-                <ul className="links">
-                    {/* <!-- <li>Home</li>
-                    <li>About Us</li> --> */}
-
-                <Link to="/signUp"> <li className="text-2xl font-serif">Sign-Up</li> </Link>
-                </ul>
-            </div>
+          
             {/* </header> */}
             <div className="grid grid-cols-1 lg:grid-cols-2">
                  
@@ -29,7 +21,7 @@ const LandingPage = () => {
                     </div>
                    
                     <div className="image">
-                        <img src="https://i.postimg.cc/65QxYYzh/001234.png" />
+                        <img src="https://i.postimg.cc/65QxYYzh/001234.png" alt="product" />
                     </div>
             </div>
                 

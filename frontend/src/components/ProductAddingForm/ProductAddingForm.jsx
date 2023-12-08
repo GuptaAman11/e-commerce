@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
-const ProductAddingForm = ({ onSubmit }) => {
+import React, { useState } from 'react'; 
+import { useAddProduct } from '../../hooks/Product';
+
+const ProductAddingForm = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [title, setTitle] = useState('');
-  const [image, setImage] = useState('');
+  const [price, setPrice] = useState('');
+  const [cat, setCat] = useState('');
+  const {addProduct} = useAddProduct()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    await addProduct(name ,description ,price ,cat)
 
-    const productData = {
-      name,
-      description,
-      title,
-      image,
-    };
-    onSubmit(productData);
   };
 
   return (
@@ -29,15 +26,15 @@ const ProductAddingForm = ({ onSubmit }) => {
         className="mt-1 p-2 w-full border rounded-md"
       />
 
-      <label className="block text-sm font-medium text-gray-600 mt-4">Title:</label>
+      <label className="block text-sm font-medium text-gray-600 mt-4">Price:</label>
       <input
-        type="text" value={title} onChange={(e) => setTitle(e.target.value)}
+        type="text" value={price} onChange={(e) => setPrice(e.target.value)}
         className="mt-1 p-2 w-full border rounded-md"
       />
 
-      <label className="block text-sm font-medium text-gray-600 mt-4">Image:</label>
+      <label className="block text-sm font-medium text-gray-600 mt-4">Cat:</label>
       <input
-        type="text" value={image} onChange={(e) => setImage(e.target.value)}
+        type="text"  onChange={(e) => setCat(e.target.value)}
         className="mt-1 p-2 w-full border rounded-md"
       />
 

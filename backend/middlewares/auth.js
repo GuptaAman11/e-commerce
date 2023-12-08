@@ -14,7 +14,7 @@ module.exports.verifyJWT = async (req, res, next) => {
    
     next();
   } catch (error) {
-    res.status(401).json({ msg: "cxcx" });
+    res.status(401).json({ msg: "oppspppps" });
   }
 };
 

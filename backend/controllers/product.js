@@ -27,6 +27,7 @@ const getAllProducts = async (req, res) => {
 const addProduct = async (req, res) => {
 
   const user = req.user.user._id
+  console.log(user)
   const { name, description, price,category } = req.body;
   const newProduct = new Product({ 
     name : name, 

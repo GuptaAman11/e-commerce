@@ -8,15 +8,19 @@ import ProductAddingForm from "./components/ProductAddingForm/ProductAddingForm"
 function App() {
   return (
     <div>
-      <Navbar />
-
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/landingPage" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+<<<<<<< HEAD
           <Route path="/" element={<HomepageCards />} />
           <Route path="/product" element={<ProductAddingForm />} />
+=======
+          <Route path="/HomepageCards" element={<HomepageCards />} />
+          <Route path="/AddProduct" element={<ProductAddingForm />} />
+>>>>>>> d504f3e01883d78968d550ae81c87a5693ac9825
         </Routes>
       </Router>
     </div>

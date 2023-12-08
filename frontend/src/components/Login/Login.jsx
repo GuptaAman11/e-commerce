@@ -12,6 +12,7 @@ const Login = () => {
 //       const response = await fetch("http://localhost:8000/api/v1/users/login", {
 //         headers: {
 //           "Content-Type": "application/JSON",
+              
 //         },
 //         method: "POST",
 //         body: JSON.stringify({

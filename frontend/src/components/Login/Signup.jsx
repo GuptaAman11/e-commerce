@@ -58,11 +58,11 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="container flex justify-center items-center bg-purple-200 h-screen w-screen">
+      <div className="container flex justify-center items-center bg-white h-screen w-screen">
         <div className="wrapper wrapper h-[100%] w-[100%] lg:h-[80%] lg:w-[30%] bg-purple-200   rounded-lg px-4 py-4 gap-4">
           <form
             onSubmit={handleOnSubmit}
-            className="form w-[50%] h-[70%]  lg:h-[100%] border-2 border-rose-600 lg:w-[100%] bg-purple-400 rounded-md  px-4 py-4 grid grid-cols-1 items-center"
+            className="form w-[50%] h-[70%]  lg:h-[100%] border-2 border-blue-600 lg:w-[100%] bg-grey-200 rounded-md  px-4 py-4 grid grid-cols-1 items-center"
           >
             <h1 className="text-center text-2xl">Sign-Up</h1>
             <div className=" flex flex-col">
@@ -118,7 +118,7 @@ const SignUp = () => {
               <input
                 name="phoneNumber"
                 onChange={handleOnChange}
-                type="number"
+                // type="number"
                 placeholder="Enter your Phone number"
                 required
                 id="btn"
@@ -149,8 +149,9 @@ const SignUp = () => {
               />
             </div>
             <div className="btn-group flex flex-col lg:flex-row justify-between px-5">
-              <button
+              <input
                 type="submit"
+                value="Save"
                 className="rounded-full bg-white px-4 py-2 items-center mt-2"
               />
               <input

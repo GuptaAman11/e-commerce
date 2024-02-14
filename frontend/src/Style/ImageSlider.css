@@ -1,0 +1,39 @@
+.image-slider-wrapper {
+    margin-top: 100px;
+    height: 400px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img {
+    flex : 1 0 100% ;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+
+.slider-nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    column-gap: 1rem;
+}
+
+.slider-nav a {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+}

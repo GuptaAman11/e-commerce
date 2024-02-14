@@ -1,0 +1,87 @@
+.Navbar {
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+   
+    
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo .name {
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    display: flex;
+    font-weight: 500;
+    font-size: large;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.searchBox  {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.searchBox input {
+    height: 36px;
+    width: 100%;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 200px;
+
+}
+
+.searchicon {
+    height: 36px;
+    background-color: white;
+    border: none;
+    font-size: 22px;
+}
+.searchicon i {
+    padding: 8px;
+}
+
+
+.rightend {
+    padding-left: 100px;
+    display: flex;
+    font-size: 33px;
+    color: white;
+    align-items: center;
+}
+
+.rightend i {
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.rightend .account {
+    display: flex;
+    align-items: center;
+    vertical-align: baseline;
+}
+
+.rightend .name2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    padding-left:8px ;
+    cursor: pointer;
+    
+}

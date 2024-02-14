@@ -1,0 +1,43 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.payment-page-container {
+    margin-top: 20px;
+    width: 100vw;
+}
+.payment-main-container {
+    display: flex;
+    justify-content: center;
+
+}
+.address-container {
+    display: flex;
+    background-color: aqua;
+    justify-content: start;
+}
+.address-main-conainer {
+
+}
+.preloaded-address {
+
+}
+.heading {
+    display: block;
+    background-color: red;
+    padding: 12px 24px;
+}
+.address {
+
+}
+.person-name {
+
+}
+.person-address {
+
+}
+.price-container {
+    background-color: black;
+}

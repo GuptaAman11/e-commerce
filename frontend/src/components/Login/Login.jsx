@@ -1,39 +1,18 @@
 import React, { useState } from "react";
 import { useLogin } from "../../hooks/Signup";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate()
   const [loginDetails, setLoginDetails] = useState({
     email: "",
     password: "",
   });
   const {userLogin} = useLogin()
-//   const userLogin = async () => {
-//     try {
-//         console.log(loginDetails)
-//       const response = await fetch("http://localhost:8000/api/v1/users/login", {
-//         headers: {
-//           "Content-Type": "application/JSON",
-              
-//         },
-//         method: "POST",
-//         body: JSON.stringify({
-//           email: loginDetails.email,
-//           password: loginDetails.password,
-//         }),
-//       });
-//       const responseData = await response.json();
-//       if (response.ok) {
-//         console.log(responseData);
-//       }
-//       localStorage.setItem('token')
-
-//     } catch (error) {
-//         console.log(error)
-//     }
-//   };
-
   const onSubmithandle = async (e) => {
     e.preventDefault();
     await userLogin(loginDetails);
+    navigate('/')
+
   };
   const handleOnChange = async (e) => {
     const { name, value } = e.target;

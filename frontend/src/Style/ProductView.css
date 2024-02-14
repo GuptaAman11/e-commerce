@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.product-main-container {
+    margin: 0 110px;
+    padding: 10px;
+    border: none;
+}
+.product-view-section {
+    display: flex;
+}
+
+.product-image-section {
+    width: 50%;
+    background-color: bl;
+}
+.text1-section {
+    width: 50%;
+    background-color: red;
+}

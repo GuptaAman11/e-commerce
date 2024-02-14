@@ -1,20 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../Style/Navber.css'
  
 const Navbar = () => {
   return (
-    <>
-       <div className='bg-blue-500 flex flex-col lg:flex-row h-20 w-screen items-center px-8 justify-between'>
-           <span className='text-bold text-3xl text-white font-serif '><a href='#'>E-Shopee</a></span>
-           <div className='flex flex-row gap-5 lg:gap-10 font-serif'>
-               <Link to="/HomePageCards" className='text-bold text-xl text-white'>Home</Link>
-               <a href='#' className='text-bold text-xl text-white'>AboutUs</a>
-               <a href='#' className='text-bold text-xl text-white'>Contact</a>
-               <a href='#' className='text-bold text-xl text-white hover:text-blue-950  hover:rounded-full px-6 hover:bg-white'>Cart</a>
-           </div>
-       </div>
-    
-    </>
+    <div className='Navbar'>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+      <div className="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOYo0sFIC899TtKVeUXKCJaJ-AAuooFPxKGg&usqp=CAU" 
+        alt="" className="logoImage" />
+        <div className="name">SHOPEES</div>
+        <div className='searchBox'>
+          <form>
+            <div>
+              <input type='textarea' placeholder='Search product of all brands ' />
+
+            </div>
+          </form>
+          <div className="searchicon"><i class='bx bx-search' ></i></div>
+        </div>
+      </div>
+
+      <div className="rightend">
+        <div className="cart"><i class='bx bx-cart-alt' ></i></div>
+        <div className="wishlist"><i class='bx bxs-heart' ></i></div>
+        <div className="account"><i class='bx bxs-user-circle' ></i>
+        <div className='name2'>Aman</div></div>
+      </div>
+
+    </div>
   )
 }
 
